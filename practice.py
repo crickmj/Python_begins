@@ -1,16 +1,10 @@
-python = "Python is Amazing"
-print(python.lower())
-print(python.upper())
-print(python[0].isupper())
-print(len(python))
-print(python.replace("Python", "Java"))
 
-index = python.index("n")
-print(index)
+url = "http://youtube.com"
+my_str = url.replace("http://", "") # 규칙 1
 
-index = python.index("n", index+1)
-print(index)
+my_str = my_str[0:5]
+print(my_str)
 
-print(python.find("Java"))
 
-print(python.count("n"))
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print("{0}의 비밀번호는 {1} 입니다.".format(url,password))
