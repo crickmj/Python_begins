@@ -10,6 +10,5 @@ print(randrange(1, 46))
 print(randrange(1, 46))
 print(randrange(1, 46))
 print(randrange(1, 46))
-print(randrange(1, 46))
 print(randrange(1, 46)) # 1 ~ 46 미만의 임의 값
 print(randint(1,45)) # 1 ~ 45 이하의 임의 값 생성
