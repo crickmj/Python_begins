@@ -1,28 +1,19 @@
 
-cabinet = {"a-3":"유재석", "b-100":"김태호"}
+from random import shuffle
 
-print(cabinet["a-3"])
 
-print(cabinet)
+user = range(1,21) 
 
-cabinet["c-20"] = "조세호" 
-print(cabinet)
+user = list(user)
+print(user)
+from random import *
 
-cabinet["a-3"] = "종국이"
-print(cabinet)
+shuffle(user)
+print(user)
 
-# 간 손님
+winners = sample(user,4) 
 
-del cabinet["a-3"]
-print(cabinet)
-
-# key 들만 출력
-
-print(cabinet.keys())
-
-print(cabinet.values())
-
-print(cabinet.items())
-
-cabinet.clear()
-print(cabinet)
+print("당첨자 발표")
+print("치킨 당첨자 : {0}".format(winners[0]))
+print("커피 당첨자 : {0}".format(winners[1:4]))
+print("축하합니다")
