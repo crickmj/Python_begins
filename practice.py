@@ -1,19 +1,10 @@
 
-from random import shuffle
+from this import d
 
 
-user = range(1,21) 
+print("hellow world")
 
-user = list(user)
-print(user)
-from random import *
+sd = [1,2,3,4,10,9,6,7,8]
+sd.sort()
 
-shuffle(user)
-print(user)
-
-winners = sample(user,4) 
-
-print("당첨자 발표")
-print("치킨 당첨자 : {0}".format(winners[0]))
-print("커피 당첨자 : {0}".format(winners[1:4]))
-print("축하합니다")
+print(sd)
