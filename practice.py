@@ -1,10 +1,10 @@
+weather = "비" 
+#if 조건: 
+#  실행 명령문
 
-from this import d
+ if weahter == "비":
+ print("우산을 챙기세요")
 
 
-print("hellow world")
+    
 
-sd = [1,2,3,4,10,9,6,7,8]
-sd.sort()
-
-print(sd)
