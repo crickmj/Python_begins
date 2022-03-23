@@ -42,3 +42,23 @@ def profile(name, age, *language): # *을 넣어서 가변인자 형성
 profile("유재석", 20, "python", "java","c","c++","c#","java script")
 profile("김태호", 23, "Kotlin", "Swift")
     
+## global 변수 설정
+
+gun = 10
+
+def checkpoint(soldiers): #경계근무
+    global gun 
+    gun = gun - soldiers 
+    print("[함수 내] 남은 총: {0}".format(gun))
+    
+def checkpoint_ret(gun, soldiers): 
+    gun = gun - soldiers 
+    print("[함수 내] 남은 총: {0}".format(gun)) 
+    return(gun)
+
+print("전체 총: {0}".format(gun)) 
+
+## checkpoint에 2명 경계근무
+
+gun = checkpoint_ret(gun, 2)
+print("남은 총: {0}".format(gun))
