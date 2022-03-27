@@ -11,7 +11,7 @@ class AttackUnit(Unit): # 자식 클래스
         Unit.__init__(self,name,hp)
         self.damage = damage
     
-    def attach(self, location):
+    def attack(self, location):
         print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력: {2}]"\
             .format(self.name, location, self.damage))
         
