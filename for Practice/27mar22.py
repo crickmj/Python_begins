@@ -13,6 +13,30 @@
 
 # 파일 읽어오기
  
- score_file = open("score.txt", "r", encoding="utf8") 
- print(score_file.read())
- score_file.close()
+# score_file = open("score.txt", "r", encoding="utf8") 
+# print(score_file.read())
+# score_file.close()
+
+# score_file = open("score.txt", "r", encoding="utf8") 
+# print(score_file.readline(), end="") # 줄글로 읽기, 한 줄 읽고 커서는 다음 줄로 이동
+# print(score_file.readline(), end="")
+# print(score_file.readline(), end="")
+# print(score_file.readline(), end="")
+# score_file.close()
+
+# 몇 줄인지 모를때..! (다른사람 파일)
+
+# score_file = open("score.txt", "r", encoding="utf8") 
+# while True:
+#     line = score_file.readline()
+#     if not line:
+#         break
+#     print(line, end="") 
+# score_file.close()
+
+# list 
+score_file = open("score.txt", "r", encoding="utf8")
+lines = score_file.readlines() # list 형태로 저장
+for line in lines:
+    print(line)
+score_file.close()
