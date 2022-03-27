@@ -1,4 +1,4 @@
-import pickle
+# import pickle
 # profile_file = open("profile.pickle","wb") # pickle 에서는 binary 설정을 위해 wb로 입력, pickle은 따로 encoding 설정 필요 없음
 # profile = {"이름":"박명수","나이":30,"취미":["축구","골프","코딩"]}
 # print(profile)
@@ -43,3 +43,5 @@ for i in range(1,51):
         report_file.write("\n부서:")
         report_file.write("\n이름:")
         report_file.write("\n업무 요약:")
+
+    
