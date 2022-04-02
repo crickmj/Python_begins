@@ -6,6 +6,10 @@
 # trip_to = ThailandPackage()
 # trip_to.detail()
 
-from travel import vietnam # 이 구문에서는 사용 가능 
+# from travel import vietnam # 이 구문에서는 사용 가능 
+# trip_to = vietnam.VietnamPackage()
+# trip_to.detail()
+
+from travel import *
 trip_to = vietnam.VietnamPackage()
 trip_to.detail()
