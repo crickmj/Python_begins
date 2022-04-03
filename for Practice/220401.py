@@ -65,8 +65,5 @@
 
 # Quiz 
 
-from mailbox import BabylMessage
 
 
-import byme
-byme.sign
