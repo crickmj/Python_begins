@@ -1,3 +1,4 @@
+from math import fabs
 from unicodedata import name
 
 
@@ -47,8 +48,29 @@ print(result)
 result = add_mul('mul', 1,4,5)
 print(result)
 
-
+# 키워드/딕셔너리는 별 두 개 ! 
 def print_kwargs(**kwargs):
     print(kwargs)
     
 print_kwargs(first_name = "minjoon")
+
+#함수의 결괏값은 언제나 하나이다.
+def add_and_mul(a,b):
+    return a+b, a*b
+# 튜플로 뜨게 하기 싫으면 아래처럼 나눠서 1,2 ㄹ 이렇게 써주면 됨
+results1, results2 = add_and_mul(3,4)
+print(results1, results2)
+
+#매개변수 초깃값
+
+
+def say_myself(name, age, man=True):
+    print("my name is %s." %name)
+    print("i am %d years old." %age)
+    if man:
+        print("i am a man")
+    else:
+        print("i am a girl")
+        
+say_myself("준",32) # 이가지만 쳐도 자동으로 man true 디폴트 설정 
+say_myself("준",32, False)
