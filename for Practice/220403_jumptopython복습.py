@@ -26,3 +26,36 @@ print(s1)
 
 s1.remove(1)
 print(s1)
+
+# bool type
+
+a = [1,2,3,4,5,6]
+
+while a:
+    a.pop()
+    if a == [1,2]:
+        break
+    else:
+        continue
+        
+print(a)
+
+print(bool('pythol'))
+
+print(id(a))
+
+# 동일 id에 저장되어도, 슬라이싱 혹은 copy 써서 지정하면, id 바뀌어서 따로 변경 가능 
+from copy import copy
+
+b = a.copy()
+print(b)
+
+print(id(a))
+print(id(b))
+
+a = [1,2,3]
+b = [1,2,3]
+
+print(a is b)
+print(id(a))
+print(id(b))
