@@ -74,3 +74,17 @@ def say_myself(name, age, man=True):
         
 say_myself("준",32) # 이가지만 쳐도 자동으로 man true 디폴트 설정 
 say_myself("준",32, False)
+
+a = 5
+def vartest(a):
+    a = a + 1
+    return a
+
+a = vartest(a)
+print(a)
+
+# labda = def 까지 사용하기엔 너무 간단하거나, 사용할 수 없는 곳에서 람다 사용
+
+add = lambda a, b: a+b
+results = add(3,4)
+print(results)
