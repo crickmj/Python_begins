@@ -62,8 +62,8 @@ d = SafeFourCal(4,0)
     
 print(d.div())
 
-import theater_module as tm
+# module 
 
-tm.price(3)
-tm.price_morning(5)
-tm.price_soldier(5)
+import mod2 
+
+print(mod2.PI)
