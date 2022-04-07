@@ -64,6 +64,7 @@ print(d.div())
 
 # module 
 
-import mod2 
+import mod2
+result = mod2.add(3,4)
 
-print(mod2.PI)
+print(result)

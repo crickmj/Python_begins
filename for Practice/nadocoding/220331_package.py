@@ -10,6 +10,8 @@
 # trip_to = vietnam.VietnamPackage()
 # trip_to.detail()
 
-from travel import *
-trip_to = vietnam.VietnamPackage()
-trip_to.detail()
+from travel.thailand import ThailandPackage
+
+trip_to = ThailandPackage()
+
+print(trip_to())
