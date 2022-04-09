@@ -1,6 +1,7 @@
 # try/error 구문
 
 import enum
+import sys
 from unicodedata import name
 
 
@@ -79,3 +80,32 @@ print(divmod(4,2)) # divmod(a,b) a를 b로 나눈 몫과 나머지 튜플형태�
 
 for i, name in enumerate(['body','head','toe','hands']):
     print(i, name) # 순서가 있는 자료형(리스트, 튜플, 문자열)을 인덱스를 포함하느 Enumerate 객체로 반환 
+    
+# filter 
+def positive(l):
+    result = []
+    for i in l:
+        if i > 0:
+            result.append(i)
+    return result
+
+print(positive([1,2,-3,-4,-5,-10,0,10,22]))
+
+# --> 이거를 filter로 
+
+def positive(x):
+    return x > 0
+
+print(list(filter(positive, [1,2,-3,-4,-5,-10,0,10,22])))
+
+# library 
+
+import sys
+print(sys.argv)
+
+import os
+
+print(os.getcwd())
+
+import shutil
+shutil.copy('new.txt','shutil.txt')
