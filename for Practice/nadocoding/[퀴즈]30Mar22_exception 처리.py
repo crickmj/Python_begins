@@ -25,5 +25,3 @@ while(True):
     except SoldOutError:
          print("재료가 소진되었습니다.")
          break
-     
-   
