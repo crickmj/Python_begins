@@ -25,10 +25,18 @@
 
 
  # test case 
+
 T = int(input())
 
 for t in range(T):
     A, B = map(int, input().split())
     print (A + B)
     
+# 11021 문제
+
+T = int(input())
+
+for t in range(1, T+1):
+    A, B = map(int, input().split())
+    print ("Case #" + str(t) + ':', A+B)
 
