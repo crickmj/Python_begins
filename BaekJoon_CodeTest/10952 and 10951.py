@@ -55,10 +55,9 @@ while True:
 # 17
 # 7
 
-while True: 
-    A, B = map(int, input().split())
-    if A == 0 and B == 0:
+while True:
+    try:
+        A, B = map(int, input().split())
+    except:
         break
-    else:
-        print(A+B)
-        
+    print(A+B)
